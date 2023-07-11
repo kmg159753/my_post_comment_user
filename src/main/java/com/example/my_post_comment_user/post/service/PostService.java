@@ -1,16 +1,16 @@
-package com.example.assignment_week1.post.service;
+package com.example.my_post_comment_user.post.service;
 
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
-import com.example.assignment_week1.auth.entity.User;
-import com.example.assignment_week1.auth.repository.UserRepository;
-import com.example.assignment_week1.global.exception.CustomException;
-import com.example.assignment_week1.global.type.ErrorCode;
-import com.example.assignment_week1.global.util.JwtUtil;
-import com.example.assignment_week1.post.dto.PostRequestDto;
-import com.example.assignment_week1.post.dto.PostResponseDto;
-import com.example.assignment_week1.post.entity.Post;
-import com.example.assignment_week1.post.repository.PostRepository;
-import jakarta.servlet.http.HttpServletRequest;
+
+import com.example.my_post_comment_user.auth.entity.UserRoleEnum;
+import com.example.my_post_comment_user.auth.entity.User;
+import com.example.my_post_comment_user.auth.repository.UserRepository;
+import com.example.my_post_comment_user.global.exception.CustomException;
+import com.example.my_post_comment_user.global.type.ErrorCode;
+import com.example.my_post_comment_user.global.util.JwtUtil;
+import com.example.my_post_comment_user.post.dto.PostRequestDto;
+import com.example.my_post_comment_user.post.dto.PostResponseDto;
+import com.example.my_post_comment_user.post.entity.Post;
+import com.example.my_post_comment_user.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

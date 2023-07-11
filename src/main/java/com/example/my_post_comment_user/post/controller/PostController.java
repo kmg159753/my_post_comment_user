@@ -1,11 +1,11 @@
-package com.example.assignment_week1.post.controller;
+package com.example.my_post_comment_user.post.controller;
 
 
-import com.example.assignment_week1.auth.UserDetailsImpl;
-import com.example.assignment_week1.post.dto.PostRequestDto;
-import com.example.assignment_week1.post.dto.PostResponseDto;
-import com.example.assignment_week1.post.service.PostService;
-import jakarta.servlet.http.HttpServletRequest;
+
+import com.example.my_post_comment_user.auth.UserDetailsImpl;
+import com.example.my_post_comment_user.post.dto.PostRequestDto;
+import com.example.my_post_comment_user.post.dto.PostResponseDto;
+import com.example.my_post_comment_user.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,12 +1,15 @@
-package com.example.assignment_week1.post.entity;
+package com.example.my_post_comment_user.post.entity;
 
 
-import com.example.assignment_week1.auth.entity.User;
-import com.example.assignment_week1.comment.entity.Comment;
-import com.example.assignment_week1.global.entity.Timestamped;
-import com.example.assignment_week1.post.dto.PostRequestDto;
+
+import com.example.my_post_comment_user.auth.entity.User;
+import com.example.my_post_comment_user.comment.entity.Comment;
+import com.example.my_post_comment_user.global.entity.Timestamped;
+import com.example.my_post_comment_user.post.dto.PostRequestDto;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;

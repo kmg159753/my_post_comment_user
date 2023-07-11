@@ -1,6 +1,7 @@
-package com.example.assignment_week1.post.dto;
+package com.example.my_post_comment_user.post.dto;
 
-import com.example.assignment_week1.auth.entity.User;
+
+import com.example.my_post_comment_user.auth.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 
