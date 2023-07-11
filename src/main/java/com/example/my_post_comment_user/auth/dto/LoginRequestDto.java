@@ -1,4 +1,4 @@
-package com.example.assignment_week1.auth.dto;
+package com.example.my_post_comment_user.auth.dto;
 
 import lombok.Getter;
 

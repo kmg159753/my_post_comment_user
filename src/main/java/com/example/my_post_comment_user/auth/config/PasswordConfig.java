@@ -1,4 +1,5 @@
-package com.example.assignment_week1.auth.config;
+package com.example.my_post_comment_user.auth.config;
+
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

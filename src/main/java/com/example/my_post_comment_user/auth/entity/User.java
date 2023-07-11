@@ -1,12 +1,10 @@
 
-package com.example.assignment_week1.auth.entity;
+package com.example.my_post_comment_user.auth.entity;
 
 
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
 
 @Entity
 @Getter

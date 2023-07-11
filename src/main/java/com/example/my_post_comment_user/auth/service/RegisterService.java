@@ -1,11 +1,11 @@
-package com.example.assignment_week1.auth.service;
+package com.example.my_post_comment_user.auth.service;
 
-import com.example.assignment_week1.auth.config.PasswordConfig;
-import com.example.assignment_week1.auth.dto.SignupRequestDto;
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
-import com.example.assignment_week1.auth.entity.User;
-import com.example.assignment_week1.auth.repository.UserRepository;
-import com.example.assignment_week1.global.util.JwtUtil;
+
+import com.example.my_post_comment_user.auth.config.PasswordConfig;
+import com.example.my_post_comment_user.auth.dto.SignupRequestDto;
+import com.example.my_post_comment_user.auth.entity.UserRoleEnum;
+import com.example.my_post_comment_user.auth.entity.User;
+import com.example.my_post_comment_user.auth.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

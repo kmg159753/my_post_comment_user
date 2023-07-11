@@ -1,8 +1,9 @@
-package com.example.assignment_week1.auth.filter;
+package com.example.my_post_comment_user.auth.filter;
 
 
-import com.example.assignment_week1.auth.service.LoginService;
-import com.example.assignment_week1.global.util.JwtUtil;
+
+import com.example.my_post_comment_user.auth.service.LoginService;
+import com.example.my_post_comment_user.global.util.JwtUtil;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

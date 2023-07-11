@@ -1,11 +1,11 @@
-package com.example.assignment_week1.auth.dto;
+package com.example.my_post_comment_user.auth.dto;
+
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
-
 
 @Getter
 public class SignupRequestDto {

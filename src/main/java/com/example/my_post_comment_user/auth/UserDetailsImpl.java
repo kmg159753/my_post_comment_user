@@ -1,12 +1,12 @@
-package com.example.assignment_week1.auth;
+package com.example.my_post_comment_user.auth;
 
 
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
-import com.example.assignment_week1.auth.entity.User;
+
+import com.example.my_post_comment_user.auth.entity.UserRoleEnum;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-
 import org.springframework.security.core.userdetails.UserDetails;
+import com.example.my_post_comment_user.auth.entity.User;
 
 import java.util.ArrayList;
 import java.util.Collection;

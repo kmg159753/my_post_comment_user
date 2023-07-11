@@ -1,6 +1,7 @@
-package com.example.assignment_week1.auth.repository;
+package com.example.my_post_comment_user.auth.repository;
 
-import com.example.assignment_week1.auth.entity.User;
+
+import com.example.my_post_comment_user.auth.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

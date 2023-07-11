@@ -1,8 +1,9 @@
-package com.example.assignment_week1.auth.service;
+package com.example.my_post_comment_user.auth.service;
 
-import com.example.assignment_week1.auth.UserDetailsImpl;
-import com.example.assignment_week1.auth.entity.User;
-import com.example.assignment_week1.auth.repository.UserRepository;
+
+import com.example.my_post_comment_user.auth.UserDetailsImpl;
+import com.example.my_post_comment_user.auth.entity.User;
+import com.example.my_post_comment_user.auth.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

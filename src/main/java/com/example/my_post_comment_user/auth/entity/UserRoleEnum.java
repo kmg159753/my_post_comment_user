@@ -1,4 +1,4 @@
-package com.example.my_post_comment_user.auth.dto.type;
+package com.example.my_post_comment_user.auth.entity;
 
 public enum UserRoleEnum {
     USER(Authority.USER),  // 사용자 권한

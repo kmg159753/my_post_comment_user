@@ -1,10 +1,12 @@
-package com.example.assignment_week1.auth.config;
+package com.example.my_post_comment_user.auth.config;
 
-import com.example.assignment_week1.auth.filter.JwtAuthenticationFilter;
-import com.example.assignment_week1.auth.filter.JwtAuthorizationFilter;
-import com.example.assignment_week1.auth.service.LoginService;
-import com.example.assignment_week1.global.util.JwtUtil;
+
+import com.example.my_post_comment_user.auth.filter.JwtAuthenticationFilter;
+import com.example.my_post_comment_user.auth.filter.JwtAuthorizationFilter;
+import com.example.my_post_comment_user.global.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
+import com.example.my_post_comment_user.auth.service.LoginService;
+
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -63,8 +65,6 @@ public class WebSecurityConfig {
                         .requestMatchers(HttpMethod.GET,"/api/posts/**").permitAll()
                         .anyRequest().authenticated() // 그 외 모든 요청 인증처리
         );
-
-
 
         // 필터 관리
         http.addFilterBefore(jwtAuthorizationFilter(), JwtAuthenticationFilter.class);

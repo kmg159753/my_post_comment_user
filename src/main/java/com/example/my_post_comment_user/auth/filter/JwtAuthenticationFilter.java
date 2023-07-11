@@ -1,12 +1,10 @@
-package com.example.assignment_week1.auth.filter;
+package com.example.my_post_comment_user.auth.filter;
 
 
-
-
-import com.example.assignment_week1.auth.UserDetailsImpl;
-import com.example.assignment_week1.auth.dto.LoginRequestDto;
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
-import com.example.assignment_week1.global.util.JwtUtil;
+import com.example.my_post_comment_user.auth.UserDetailsImpl;
+import com.example.my_post_comment_user.auth.dto.LoginRequestDto;
+import com.example.my_post_comment_user.auth.entity.UserRoleEnum;
+import com.example.my_post_comment_user.global.util.JwtUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

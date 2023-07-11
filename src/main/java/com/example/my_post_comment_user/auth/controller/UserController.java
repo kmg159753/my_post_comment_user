@@ -1,10 +1,8 @@
-package com.example.assignment_week1.auth.controller;
+package com.example.my_post_comment_user.auth.controller;
 
 
-import com.example.assignment_week1.auth.dto.LoginRequestDto;
-import com.example.assignment_week1.auth.dto.SignupRequestDto;
-import com.example.assignment_week1.auth.service.RegisterService;
-import jakarta.servlet.http.HttpServletResponse;
+import com.example.my_post_comment_user.auth.dto.SignupRequestDto;
+import com.example.my_post_comment_user.auth.service.RegisterService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +24,4 @@ public class UserController {
         return username + " 가 회원가입에 성공했습니다.";
 
     }
-
-
-
 }
