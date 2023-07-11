@@ -1,4 +1,4 @@
-package com.example.assignment_week1.global.exception;
+package com.example.my_post_comment_user.global.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

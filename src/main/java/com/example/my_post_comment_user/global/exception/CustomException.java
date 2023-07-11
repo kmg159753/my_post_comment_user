@@ -1,6 +1,7 @@
-package com.example.assignment_week1.global.exception;
+package com.example.my_post_comment_user.global.exception;
 
-import com.example.assignment_week1.global.type.ErrorCode;
+
+import com.example.my_post_comment_user.global.type.ErrorCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

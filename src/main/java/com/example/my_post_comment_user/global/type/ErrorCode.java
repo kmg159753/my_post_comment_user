@@ -1,4 +1,4 @@
-package com.example.assignment_week1.global.type;
+package com.example.my_post_comment_user.global.type;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
