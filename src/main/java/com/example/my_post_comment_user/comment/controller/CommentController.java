@@ -18,16 +18,24 @@ public class CommentController {
 
     private final CommentService commentService;
 
-    @PostMapping("{id}")
-    public ResponseEntity<CommentResponse> save(@RequestBody CommentRequest commentRequest,
-                                                @PathVariable("id") Long boardId,
+    @PostMapping("{postId}")
+    public ResponseEntity<CommentResponse> createComment(@RequestBody CommentRequest commentRequest,
+                                                @PathVariable("postId") Long postId
+                                                ) {
+        CommentResponse commentResponse = commentService.createComment(commentRequest, postId);
+        return new ResponseEntity<>(commentResponse, HttpStatus.OK);
+    }
+
+    @PostMapping("/reply/{commentId}")
+    public ResponseEntity<CommentResponse> createComment_Comment(@RequestBody CommentRequest commentRequest,
+                                                @PathVariable("commentId") Long commentId,
                                                 @AuthenticationPrincipal UserDetailsImpl userDetails) {
-        CommentResponse commentResponse = commentService.createComment(commentRequest, boardId, userDetails.getUser());
+        CommentResponse commentResponse = commentService.createComment_Comment(commentRequest, commentId, userDetails.getUser());
         return new ResponseEntity<>(commentResponse, HttpStatus.OK);
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<CommentResponse> update(@RequestBody CommentRequest commentRequest,
+    public ResponseEntity<CommentResponse> updateComment(@RequestBody CommentRequest commentRequest,
                                                 @PathVariable("id") Long commentId,
                                                   @AuthenticationPrincipal UserDetailsImpl userDetails) {
         CommentResponse commentResponse = commentService.updateComment(commentRequest, commentId, userDetails.getUser());
@@ -35,7 +43,7 @@ public class CommentController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<String> delete(@PathVariable("id") Long commentId,
+    public ResponseEntity<String> deleteComment(@PathVariable("id") Long commentId,
                                          @AuthenticationPrincipal UserDetailsImpl userDetails) {
         Long Id = commentService.deleteComment(commentId, userDetails.getUser());
 

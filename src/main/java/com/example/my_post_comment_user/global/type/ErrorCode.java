@@ -20,7 +20,7 @@ public enum ErrorCode {
 
     //댓글
     WRONG_BOARD_PID(HttpStatus.BAD_REQUEST, "잘못된 게시글 접근 입니다."),
-    WRONG_COMMENT_PID(HttpStatus.BAD_REQUEST, "잘못된 댓글 접근 입니다."),
+    WRONG_COMMENT_ID(HttpStatus.BAD_REQUEST, "잘못된 댓글 접근 입니다."),
     WRONG_NAME(HttpStatus.BAD_REQUEST, "작성자만 삭제/수정할 수 있습니다.")
     ;
 

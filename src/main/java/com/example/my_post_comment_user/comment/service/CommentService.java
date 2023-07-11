@@ -22,13 +22,13 @@ public class CommentService {
     private final CommentRepository commentRepository;
 
     @Transactional
-    public CommentResponse createComment(CommentRequest commentRequest, Long postId, User user) {
+    public CommentResponse createComment(CommentRequest commentRequest, Long postId) {
         Post post = postRepository.findById(postId).orElseThrow(() ->
         {
             throw new CustomException(ErrorCode.NO_POST);
         });
 
-        Comment savedComment = commentRepository.save(new Comment(commentRequest.getContent(), post));
+        Comment savedComment = commentRepository.save(new Comment(commentRequest, post));
 
         return new CommentResponse(savedComment);
     }
@@ -69,6 +69,15 @@ public class CommentService {
     }
 
 
+    public CommentResponse createComment_Comment(CommentRequest commentRequest, Long commentId, User user) {
+        Comment parentcomment = commentRepository.findById(commentId).orElseThrow(() ->
+                new CustomException(ErrorCode.WRONG_COMMENT_ID)
+        );
 
+        Comment comment_comment = new Comment(commentRequest, parentcomment);
 
+        commentRepository.save(comment_comment);
+
+        return new CommentResponse(comment_comment);
+    }
 }
