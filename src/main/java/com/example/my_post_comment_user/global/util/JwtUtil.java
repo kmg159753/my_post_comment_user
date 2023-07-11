@@ -1,8 +1,6 @@
-package com.example.assignment_week1.global.util;
+package com.example.my_post_comment_user.global.util;
 
-
-
-import com.example.assignment_week1.auth.dto.type.UserRoleEnum;
+import com.example.my_post_comment_user.auth.entity.UserRoleEnum;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
