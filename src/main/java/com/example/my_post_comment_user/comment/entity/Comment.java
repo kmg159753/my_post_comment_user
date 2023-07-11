@@ -2,6 +2,7 @@ package com.example.my_post_comment_user.comment.entity;
 
 
 import com.example.my_post_comment_user.comment.dto.CommentRequest;
+import com.example.my_post_comment_user.global.entity.Timestamped;
 import com.example.my_post_comment_user.post.entity.Post;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -10,12 +11,15 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class Comment {
+public class Comment extends Timestamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +30,14 @@ public class Comment {
     private String content;
 
 
+    //셀프 조인
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "parentId")
+    private Comment parent;
+
+    @OneToMany(mappedBy = "parent",cascade = CascadeType.ALL)
+    private List<Comment> commentList = new ArrayList<>();
+
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
@@ -34,9 +46,14 @@ public class Comment {
 
 
 
-    public Comment(String content, Post post) {
-        this.content = content;
+    public Comment(CommentRequest request, Post post) {
+        this.content = request.getContent();
         this.post = post;
+    }
+    public Comment(CommentRequest request,Comment parentcomment) {
+        this.content = request.getContent();
+        this.parent = parentcomment;
+        this.post = parentcomment.getPost();
     }
 
     public void update(CommentRequest request) {
