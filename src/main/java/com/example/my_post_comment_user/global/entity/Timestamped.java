@@ -1,4 +1,4 @@
-package com.example.assignment_week1.global.entity;
+package com.example.my_post_comment_user.global.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
