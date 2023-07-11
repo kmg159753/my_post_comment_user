@@ -1,6 +1,7 @@
-package com.example.assignment_week1.comment.response;
+package com.example.my_post_comment_user.comment.dto;
 
-import com.example.assignment_week1.comment.entity.Comment;
+
+import com.example.my_post_comment_user.comment.entity.Comment;
 import lombok.Getter;
 
 @Getter

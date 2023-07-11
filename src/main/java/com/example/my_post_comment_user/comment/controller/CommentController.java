@@ -1,10 +1,10 @@
-package com.example.assignment_week1.comment.controller;
+package com.example.my_post_comment_user.comment.controller;
 
-import com.example.assignment_week1.auth.UserDetailsImpl;
-import com.example.assignment_week1.comment.request.CommentRequest;
-import com.example.assignment_week1.comment.response.CommentResponse;
-import com.example.assignment_week1.comment.service.CommentService;
-import jakarta.servlet.http.HttpServletRequest;
+
+import com.example.my_post_comment_user.auth.UserDetailsImpl;
+import com.example.my_post_comment_user.comment.dto.CommentRequest;
+import com.example.my_post_comment_user.comment.dto.CommentResponse;
+import com.example.my_post_comment_user.comment.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

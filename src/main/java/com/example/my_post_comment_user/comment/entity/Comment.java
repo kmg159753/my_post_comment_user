@@ -1,7 +1,8 @@
-package com.example.assignment_week1.comment.entity;
+package com.example.my_post_comment_user.comment.entity;
 
-import com.example.assignment_week1.comment.request.CommentRequest;
-import com.example.assignment_week1.post.entity.Post;
+
+import com.example.my_post_comment_user.comment.dto.CommentRequest;
+import com.example.my_post_comment_user.post.entity.Post;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

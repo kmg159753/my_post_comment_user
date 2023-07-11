@@ -1,4 +1,4 @@
-package com.example.assignment_week1.comment.request;
+package com.example.my_post_comment_user.comment.dto;
 
 import lombok.Getter;
 
